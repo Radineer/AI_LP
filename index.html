@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>生成AI実践ブートキャンプ｜最短1日で売上に直結するAIスキル習得 | 合同会社Radineer</title>
+  <meta name="description" content="合同会社Radineerの生成AI実践ブートキャンプLP。最新のWebCampスタイルでコンバージョンを最大化。画像・視認性・信頼性・レスポンシブ全て高品質！">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body class="text-gray-900 tracking-tight min-h-screen">
+
+<!-- === 限定キャンペーン上部バナー === -->
+<div class="w-full radineer-bg-orange py-2 px-2 flex items-center justify-center text-white text-sm font-bold tracking-wide">
+  <span class="inline-flex items-center">
+    <i class="fas fa-gift text-xl mr-2"></i>
+    期間限定：受講料20%OFF＆社内稟議テンプレートを無料プレゼント
+    <span class="ml-3 p-1 bg-white bg-opacity-80 rounded text-radineer-orange text-xs font-semibold">
+      <span id="campaign-timer"></span>
+    </span>
+  </span>
+</div>
+
+<!-- === HEROセクション === -->
+<section class="relative section pt-8 pb-12 md:pb-16 bg-white">
+  <div class="container mx-auto px-5 md:px-12 relative flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-6/12 z-10">
+      <div class="text-xs md:text-sm font-bold text-radineer-blue mb-3 uppercase tracking-widest">生成AIが明日のビジネスを変える</div>
+      <h1 class="text-3xl md:text-5xl font-black leading-snug radineer-blue mb-4">
+        <span class="block">生成AI実践ブートキャンプ</span>
+        <span class="text-lg md:text-xl radineer-orange font-bold inline-block mt-1">最短1日で「売上」に直結するAIスキル習得</span>
+      </h1>
+      <div class="mb-3 md:mb-6 text-base md:text-lg font-bold text-gray-800 flex items-center flex-wrap">
+        <i class="fas fa-star text-yellow-400 mr-1"></i>
+        受講満足度 <span class="text-radineer-orange text-lg">4.9 / 5.0</span>
+        <span class="mx-2 text-gray-400">|</span>
+        <i class="fas fa-certificate text-blue-500 mr-1"></i>
+        経産省リスキリング補助金<i class="fa fa-badge ml-2">56万円対応</i>
+      </div>
+      <div class="flex gap-3 flex-col sm:flex-row mb-6 mt-6">
+        <a href="#cta" class="cta-btn cta-btn-main text-lg w-full sm:w-auto text-center shadow-lg">
+          <i class="fas fa-calendar-check mr-2"></i> 無料個別相談を予約
+        </a>
+        <a href="#cta" class="cta-btn cta-btn-sub text-lg w-full sm:w-auto text-center border-radineer-blue shadow-md">
+          <i class="fas fa-file-download mr-1"></i> 資料を今すぐダウンロード
+        </a>
+      </div>
+      <div class="mt-2 flex flex-wrap items-center text-xs text-gray-500">
+        <i class="fas fa-undo-alt text-radineer-blue mr-1"></i> 成果が出なければ<span class="text-black font-bold ml-1 mr-1">全額返金保証</span>（開催後14日以内）
+      </div>
+    </div>
+    <div class="w-full md:w-6/12 relative mt-8 md:mt-0">
+      <div class="rounded-xl shadow-2xl overflow-hidden border-4 border-blue-100 relative" style="min-height:280px;">
+        <img src="https://datanorth.ai/wp-content/uploads/2024/09/ac8a1489-large.jpeg"
+            width="700" height="400" loading="eager"
+            alt="AI研修のプロフェッショナルな風景"
+            class="w-full h-72 md:h-96 object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+      </div>
+      <span class="absolute bottom-4 right-4 bg-radineer-blue text-white text-xs font-bold px-3 py-1 rounded shadow-lg"
+        style="filter:drop-shadow(2px 4px 2px #aaa)">
+        <i class="fas fa-fire-alt mr-1 text-orange-300"></i>残席わずか
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- === メリットセクション === -->
+<section class="section section-bg-alt">
+  <div class="max-w-6xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
+      Radineerの生成AI研修を活用するメリット
+    </h2>
+    <p class="text-gray-600 mb-10">1日で「成果物」を持ち帰る圧倒的な即戦力。ROI重視の現場カリキュラム。</p>
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+      <div class="flex-1 text-center card items-center">
+        <span class="icon mx-auto mb-2"><i class="fas fa-plug"></i></span>
+        <h3 class="font-bold text-lg mb-2 text-radineer-blue">現場データ即インポート</h3>
+        <p class="text-gray-600">その場で社内資料やデータをAIに読み込ませ、"持ち帰れる成果物"を即生成。</p>
+      </div>
+      <div class="flex-1 text-center card items-center">
+        <span class="icon mx-auto mb-2"><i class="fas fa-cogs"></i></span>
+        <h3 class="font-bold text-lg mb-2 text-radineer-blue">1社専用カリキュラム</h3>
+        <p class="text-gray-600">部門や業務課題を事前ヒアリングし、御社専用の完全カスタマイズ型プログラム。</p>
+      </div>
+      <div class="flex-1 text-center card items-center">
+        <span class="icon mx-auto mb-2"><i class="fas fa-shield-alt"></i></span>
+        <h3 class="font-bold text-lg mb-2 text-radineer-blue">補助金×返金保証</h3>
+        <p class="text-gray-600">経産省リスキリング補助金対象＋成果が出なければ全額返金。金銭リスクをゼロへ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === 研修特徴セクション === -->
+<section class="section bg-white">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+          生成AI実践ブートキャンプの特徴
+        </h2>
+        <p class="text-gray-600 mb-5">1日で現場課題へ「直結」する圧倒的アウトプット型<br>
+          <span class="text-radineer-blue font-bold">企業別に学習プロセスをカスタマイズして即業務適用</span>
+        </p>
+        <ul class="mb-4 text-gray-700 space-y-3 text-base pl-1">
+          <li><i class="fas fa-clock text-radineer-orange mr-2"></i>最短1日で「AIによる資料作成・自動化フロー設計」まで実施</li>
+          <li><i class="fas fa-users-cog text-radineer-orange mr-2"></i>各部門・案件ごとに異なるケースも対応</li>
+          <li><i class="fas fa-check-double text-radineer-orange mr-2"></i>仮想データハンズオン、現場ワーク演習を重視</li>
+        </ul>
+        <div class="flex flex-wrap items-center text-xs text-gray-600 bg-gray-100 rounded-lg p-3">
+          <i class="fas fa-user-check text-radineer-blue mr-2"></i>
+          こんな時におすすめ：<br>
+          <span class="ml-4">"ChatGPTを"触っただけ"で終わらせたくない""ROIを現場で証明したい""自社データでもっと活用したい"</span>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://www.learnworlds.com/app/uploads/2023/07/AI-ChatGPT-for-Professional-Trainers-Blog.png"
+          width="480" height="300" alt="AIワークショップ研修の様子"
+          class="rounded-lg shadow-lg object-cover object-center w-full h-72" />
+        <div class="chart-container mt-6">
+          <!-- Chart.js グラフ描画 -->
+          <canvas id="benefitChart" width="440" height="250" aria-label="AI導入による工数削減・提案速度向上"></canvas>
+        </div>
+        <script>
+        window.addEventListener('DOMContentLoaded',function(){
+          var ctx = document.getElementById('benefitChart').getContext('2d');
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['人的工数', '提案書作成速度'],
+              datasets: [
+                { label: '導入前', backgroundColor: '#bbb', data: [100, 1] },
+                { label: '導入後', backgroundColor: '#0055B8', data: [35, 3.4] }
+              ]
+            },
+            options: {
+              plugins: { legend: { position: 'top' } },
+              scales: {
+                y: { beginAtZero:true, max:100, title:{display:true,text:"指数(%)"} }
+              }
+            }
+          });
+        });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === カリキュラム詳細セクション === -->
+<section class="section section-bg-alt">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 text-center mb-7">
+      1日完結・現場直結カリキュラム
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7 text-center">
+      <div class="card">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">10:00　生成AI概論＋業界事例</h3>
+        <img alt="カリキュラム例: ロードマップ"
+          src="https://static.vecteezy.com/system/resources/thumbnails/047/483/271/small_2x/improvement-icon-set-collection-for-web-vector.jpg"
+          class="w-full h-32 object-cover mb-2 rounded"
+          width="200" height="128" loading="lazy">
+        <div class="text-sm text-gray-700">短縮ロードマップ提供・業界活用の最新事例解説</div>
+      </div>
+      <div class="card">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">11:00　社内データ取り込みハンズオン</h3>
+        <img alt="カリキュラム例: AI営業提案書"
+          src="https://images.squarespace-cdn.com/content/v1/5607a923e4b02ca27d321d51/1600997594774-1WK8LQ69FNMTNX0Q6QFT/Miwa-200904-110_websize.jpg"
+          class="w-full h-32 object-cover mb-2 rounded"
+          width="200" height="128" loading="lazy">
+        <div class="text-sm text-gray-700">"AI営業提案書"ひな形を当日作成。そのまま持ち帰りOK!</div>
+      </div>
+      <div class="card">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">13:00以降　業務自動化フロー・ワーク発表</h3>
+        <img alt="カリキュラム例: OKR/ROIシート"
+          src="https://static.vecteezy.com/system/resources/previews/009/724/956/non_2x/improvement-business-process-pixel-perfect-linear-icons-set-for-dark-light-mode-thin-line-symbols-for-night-day-theme-isolated-illustrations-editable-stroke-vector.jpg"
+          class="w-full h-32 object-cover mb-2 rounded"
+          width="200" height="128" loading="lazy">
+        <div class="text-gray-700 text-sm">自社タスク自走・OKRやROI計画をセットに</div>
+      </div>
+    </div>
+    <div class="mt-7 flex justify-center gap-4">
+      <a href="#cta" class="cta-btn cta-btn-main text-lg">無料個別相談を予約</a>
+      <a href="#cta" class="cta-btn cta-btn-sub text-lg">資料を今すぐDL</a>
+    </div>
+  </div>
+</section>
+
+<!-- === Before/After セクション === -->
+<section class="section bg-white">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 text-center">こんな課題が<br class="md:hidden">驚くほど解決！</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="card text-center flex items-center">
+        <span class="icon mx-auto mb-2 text-2xl"><i class="fas fa-clipboard-list"></i></span>
+        <div>
+          <div class="text-xs text-gray-500">Before</div>
+          <h4 class="font-bold text-md mb-1">営業資料作成</h4>
+          <p class="text-gray-700 text-sm mb-1">1つの提案書作成に8時間以上…</p>
+          <div class="text-xs text-green-700 font-bold mt-2">After</div>
+          <p class="text-sm"><span class="text-radineer-orange font-bold">1.7時間</span>に短縮＆"AIテンプレ"即生成</p>
+        </div>
+      </div>
+      <div class="card text-center flex items-center">
+        <span class="icon mx-auto mb-2 text-2xl"><i class="fas fa-search"></i></span>
+        <div>
+          <div class="text-xs text-gray-500">Before</div>
+          <h4 class="font-bold text-md mb-1">顧客分析レポート</h4>
+          <p class="text-gray-700 text-sm mb-1">大量データ集計で3日徹夜</p>
+          <div class="text-xs text-green-700 font-bold mt-2">After</div>
+          <p class="text-sm"><span class="text-radineer-orange font-bold">4時間</span>でAI要約・分析レポート出力</p>
+        </div>
+      </div>
+      <div class="card text-center flex items-center">
+        <span class="icon mx-auto mb-2 text-2xl"><i class="fas fa-sync-alt"></i></span>
+        <div>
+          <div class="text-xs text-gray-500">Before</div>
+          <h4 class="font-bold text-md mb-1">業務効率化</h4>
+          <p class="text-gray-700 text-sm mb-1">AIツールを触るだけで終わり現場定着しない…</p>
+          <div class="text-xs text-green-700 font-bold mt-2">After</div>
+          <p class="text-sm">AIプロンプト・自動ワーク完成し
+            <span class="text-radineer-orange font-bold">ROI実現</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === 導入企業成果事例 & テスティモニアル === -->
+<section class="section section-bg-alt">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 text-center mb-8 mt-0">社内事例</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- 事例① -->
+      <div class="card flex flex-col items-start">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">事例①　SEO記事制作を"外注ゼロ"へ</h3>
+        <table class="w-full text-sm mb-3">
+          <tr><th class="text-left text-gray-500 pr-2">Before</th><th class="text-left text-gray-500 pl-2">After（Radineer×生成AI）</th></tr>
+          <tr><td class="align-top pr-2">外注費：@3円/字 × 6万字/月</td><td class="align-top pl-2">外注費 80%カット</td></tr>
+          <tr><td class="align-top pr-2">納期：10営業日</td><td class="align-top pl-2">最短1日で下書き完成</td></tr>
+          <tr><td class="align-top pr-2">校正者3名がフル稼働</td><td class="align-top pl-2">1名が最終チェックのみ</td></tr>
+        </table>
+        <div class="mb-2 font-bold text-radineer-orange">導入ハイライト</div>
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
+          <li>キーワード抽出 → AIがタイトル案・見出し案を自動生成</li>
+          <li>原稿生成 → 事前定義した"品質プロンプト"で一括出力</li>
+          <li>CMS投稿 → メタ情報・内部リンクまで自動入力</li>
+          <li>人間は 最終校閲と公開ボタン だけ</li>
+        </ul>
+      </div>
+      <!-- 事例② -->
+      <div class="card flex flex-col items-start">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">事例②　営業リスト作成 & メール自動化</h3>
+        <table class="w-full text-sm mb-3">
+          <tr><th class="text-left text-gray-500 pr-2">Before</th><th class="text-left text-gray-500 pl-2">After（Radineer×生成AI）</th></tr>
+          <tr><td class="align-top pr-2">リスト作成に3日</td><td class="align-top pl-2">60分でターゲット1,000件抽出</td></tr>
+          <tr><td class="align-top pr-2">メール文面作成に1通15分</td><td class="align-top pl-2">1通2秒でパーソナライズ</td></tr>
+          <tr><td class="align-top pr-2">週100通送付が限界</td><td class="align-top pl-2">日次1,000通を自動送信</td></tr>
+        </table>
+        <div class="mb-2 font-bold text-radineer-orange">導入ハイライト</div>
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
+          <li>Webスクレイピング + LLM で"今すぐ問い合わせたい企業"を自動判定</li>
+          <li>NEPQ型ヒアリング質問を組み込んだ 高CVテンプレ をAIが瞬時に生成</li>
+          <li>HubSpot連携で 開封・クリック率をリアルタイム最適化</li>
+        </ul>
+      </div>
+      <!-- 事例③ -->
+      <div class="card flex flex-col items-start">
+        <h3 class="text-lg font-bold text-radineer-blue mb-2">事例③　AI駆動開発でコード生成</h3>
+        <table class="w-full text-sm mb-3">
+          <tr><th class="text-left text-gray-500 pr-2">Before</th><th class="text-left text-gray-500 pl-2">After（Radineer×生成AI）</th></tr>
+          <tr><td class="align-top pr-2">仕様書 → 実装：3週間</td><td class="align-top pl-2">2〜3日でプロトタイプ完成</td></tr>
+          <tr><td class="align-top pr-2">バグ修正：手動デバッグ</td><td class="align-top pl-2">AIユニットテスト自動生成</td></tr>
+          <tr><td class="align-top pr-2">1人月あたり80h</td><td class="align-top pl-2">実質30hへ削減</td></tr>
+        </table>
+        <div class="mb-2 font-bold text-radineer-orange">導入ハイライト</div>
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
+          <li>要件定義を自然言語→ER図・API設計へ自動変換</li>
+          <li>GPT-4o & Devinで フロント／バックエンド同時生成</li>
+          <li>CI/CDにAIコードレビューを統合し 品質担保しつつ高速リリース</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 導入メリットまとめ -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- コスト削減 -->
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-6 h-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="コスト削減" class="w-12 h-12 mb-3">
+        <div class="text-lg font-bold text-radineer-blue mb-1">コスト削減</div>
+        <div class="text-gray-700 text-sm">最大<span class="text-radineer-orange font-bold">80%</span>のコストカットを実現</div>
+      </div>
+      <!-- リードタイム短縮 -->
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-6 h-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="リードタイム短縮" class="w-12 h-12 mb-3">
+        <div class="text-lg font-bold text-radineer-blue mb-1">リードタイム短縮</div>
+        <div class="text-gray-700 text-sm">最大<span class="text-radineer-orange font-bold">10倍</span>のスピードで成果創出</div>
+      </div>
+      <!-- 人的リソース再配置 -->
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-6 h-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="人的リソース再配置" class="w-12 h-12 mb-3">
+        <div class="text-lg font-bold text-radineer-blue mb-1">人的リソース再配置</div>
+        <div class="text-gray-700 text-sm">単純作業をAI化し、社員は高付加価値業務へ</div>
+      </div>
+      <!-- スケール耐性 -->
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-6 h-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="スケール耐性" class="w-12 h-12 mb-3">
+        <div class="text-lg font-bold text-radineer-blue mb-1">スケール耐性</div>
+        <div class="text-gray-700 text-sm">急な需要増にも24時間ノンストップ対応</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === 価格・補助金セクション === -->
+<section class="section bg-white">
+  <div class="max-w-2xl mx-auto px-5 text-center">
+    <h2 class="text-2xl mb-4 font-extrabold text-gray-900">受講費用・補助金情報</h2>
+    <div class="bg-gray-100 rounded-lg shadow py-7 px-4 mb-4 flex flex-col md:flex-row items-center justify-between gap-7">
+      <div class="md:w-1/2">
+        <div class="text-lg font-bold mb-1 text-gray-800">通常価格: <span class="text-radineer-blue text-2xl">330,000円(税込)</span></div>
+        <span class="inline-flex items-center radineer-bg-orange text-white font-bold px-3 py-2 rounded-full mt-2 text-sm">
+          補助金利用時 実質 <span class="text-lg font-bold text-white mx-2">99,000円</span> 
+        </span>
+        <div class="text-xs text-gray-500 mt-2 flex items-center justify-center">
+          <i class="fas fa-badge-check text-green-500 mr-1"></i>経産省リスキリング補助金対象・申請サポート無料
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-2 md:mt-0">
+        <div class="font-bold mb-1 text-gray-700">複数拠点割</div>
+        <span class="bg-blue-50 text-blue-900 px-3 py-1 rounded-full text-xs font-bold">2会場目以降：20%OFF</span>
+      </div>
+    </div>
+    <div class="flex justify-center gap-4 mt-6">
+      <a href="https://timerex.net/s/keiichietou/6588992c/" target="_blank" class="cta-btn cta-btn-main text-xl w-full md:w-auto text-center">
+        <i class="fa fa-calendar-check mr-2"></i> 無料個別相談を予約
+      </a>
+      <a href="#cta" class="cta-btn cta-btn-sub text-lg">資料ダウンロード</a>
+    </div>
+  </div>
+</section>
+
+<!-- === キャンペーン訴求&カウントダウン === -->
+<section class="bg-gradient-to-r from-radineer-blue to-radineer-orange py-7 px-4 my-2 text-center limited-campaign-section">
+  <div class="max-w-4xl mx-auto flex flex-col items-center">
+    <div class="text-lg font-bold limited-campaign-text">
+      ＼期間限定キャンペーン／
+    </div>
+    <div class="text-2xl font-black mt-2 mb-1 flex justify-center items-center flex-wrap campaign-highlight">
+      受講料20%OFF＋社内稟議テンプレートを無料プレゼント
+    </div>
+  </div>
+</section>
+
+<!-- === 講師紹介セクション === -->
+<section class="section section-bg-alt" id="instructor">
+  <div class="max-w-4xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 text-center">講師紹介</h2>
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/3 flex-shrink-0 flex justify-center mb-6 md:mb-0">
+        <img src="instructor.jpg"
+          alt="代表：江藤祐一"
+          class="rounded-full border-4 border-blue-200 w-36 h-36 object-cover shadow-lg">
+      </div>
+      <div class="md:w-2/3 text-left">
+        <h3 class="font-bold text-lg text-radineer-blue mb-1">江藤圭一 (生成AIスペシャリスト)</h3>
+        <div class="text-sm text-gray-800 mb-1">
+          <ul class="list-disc ml-4 space-y-1">
+            <li>慶應義塾大学法学部卒</li>
+            <li>経産省AI案件 / DX補助金PM 実績多数</li>
+            <li>AI・ChatGPT×DX導入支援／部門単位カスタム経験豊富</li>
+          </ul>
+        </div>
+        <div class="flex gap-3 mt-2 items-center text-radineer-blue">
+          <a href="https://x.com/RadineerE10" target="_blank" title="講師のX(SNS)" class="text-xl"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === よくある質問(FAQ) === -->
+<section class="section bg-white">
+  <div class="max-w-4xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 text-center">よくある質問</h2>
+    <div class="divide-y divide-gray-200">
+      <div class="py-4">
+        <div class="font-bold text-radineer-blue mb-1"><i class="far fa-question-circle mr-1"></i>本当に1日で成果物まで？</div>
+        <div class="text-gray-700 flex items-center">事前ヒアリングでデータ準備済み・AIひな形も用意するため、実務成果物作成まで確実に届きます。</div>
+      </div>
+      <div class="py-4">
+        <div class="font-bold text-radineer-blue mb-1"><i class="far fa-question-circle mr-1"></i>補助金は個人でも対象？</div>
+        <div class="text-gray-700">法人向けですが、副業・個人事業主は別枠申請もサポート。お気軽にご相談を。</div>
+      </div>
+      <div class="py-4">
+        <div class="font-bold text-radineer-blue mb-1"><i class="far fa-question-circle mr-1"></i>返金条件は？</div>
+        <div class="text-gray-700">開催後14日以内にROI計画が立たなければ、全額ご返金します。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === 最終CTAセクション === -->
+<section class="section section-bg-alt text-center" id="cta">
+  <div class="max-w-3xl mx-auto px-5 py-8">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-radineer-blue mb-2">AIで現場を「売上化」<br>まずは無料でご相談・資料GET！</h2>
+    <p class="text-gray-600 mb-6">個別相談は30秒で完了。資料を即ダウンロード。</p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mb-6">
+      <a href="https://timerex.net/s/keiichietou/6588992c/" target="_blank" class="cta-btn cta-btn-main text-xl w-full md:w-auto text-center">
+        <i class="fa fa-calendar-check mr-2"></i> 無料個別相談を予約
+      </a>
+      <a href="https://radineer.asia/company-info-pdf" target="_blank" class="cta-btn cta-btn-sub text-xl w-full md:w-auto text-center">
+        <i class="fa fa-file-download mr-1"></i> 資料を今すぐダウンロード
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- === フッター === -->
+<footer class="py-8 px-5 bg-gray-50 border-t border-gray-200">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+    <div class="text-sm text-gray-500 flex items-center gap-6 mb-2 md:mb-0">
+      <span>
+        <i class="fas fa-shield-check text-lg text-green-500 mr-1"></i>
+        <span class="font-bold text-gray-800">全額返金保証</span>
+      </span>
+      <span>
+        <i class="fas fa-certificate text-indigo-600 mr-1"></i>
+        <span>経産省リスキリング補助金対象</span>
+      </span>
+      <span>
+        <i class="fas fa-user-shield text-blue-500 mr-1"></i>
+        <span>プライバシー保護</span>
+      </span>
+    </div>
+    <div class="text-xs text-gray-400 text-right space-y-1">
+      <div>© 2024 合同会社Radineer</div>
+      <div>
+        <a href="https://radineer.asia/contact" class="text-blue-600 hover:underline">お問い合わせ</a> |
+        <a href="https://radineer.asia/privacy" class="text-blue-600 hover:underline">個人情報保護方針</a> |
+        <a href="https://radineer.asia/law" class="text-blue-600 hover:underline">特商法表記</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // カウントダウン表示
+  function showCountdown(spanId, endDateStr){
+    const endDate = new Date(endDateStr);
+    function tick(){
+      let now = new Date();
+      let diff = Math.max(endDate - now,0);
+      let hours = Math.floor(diff/36e5), mins = Math.floor((diff%36e5)/6e4), secs = Math.floor((diff%6e4)/1000);
+      const str = `${String(hours).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+      let span = document.getElementById(spanId);
+      if(span) span.innerText = (diff>0)?str:"終了";
+    }
+    setInterval(tick, 1000); tick();
+  }
+  showCountdown("campaign-timer", "2024-04-30T23:59:59+09:00");
+  showCountdown("campaign-timer-2", "2024-04-30T23:59:59+09:00");
+</script>
+</body>
+</html>
+
